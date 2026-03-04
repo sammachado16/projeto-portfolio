@@ -228,6 +228,16 @@ article h2 {
   margin-bottom: 10px;
 }
 
+.projeto-info a {
+  text-decoration: none;
+  color: black;
+}
+
+.projeto-info a:hover {
+  font-size: 1.05em;
+  transition: font-size 0.1s;
+}
+
 #projeto-container .projeto {
   display: flex;
   flex-direction: column;
@@ -242,7 +252,6 @@ article h2 {
 #projeto-container .projeto:hover {
   border-color: var(--destaque);
   border-left-width: 15px;
-  cursor: pointer;
 }
 
 #projeto-container .foto {
@@ -251,8 +260,12 @@ article h2 {
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
-
 }
+
+#projeto-container .foto:hover {
+  outline: 5px solid var(--destaque);
+}
+
 
 footer {
   background-color: var(--destaque);
