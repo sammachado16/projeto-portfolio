@@ -228,16 +228,6 @@ article h2 {
   margin-bottom: 10px;
 }
 
-.projeto-info a {
-  text-decoration: none;
-  color: black;
-}
-
-.projeto-info a:hover {
-  font-size: 1.05em;
-  transition: font-size 0.1s;
-}
-
 #projeto-container .projeto {
   display: flex;
   flex-direction: column;
@@ -263,9 +253,20 @@ article h2 {
 }
 
 #projeto-container .foto:hover {
-  outline: 5px solid var(--destaque);
+  outline: 3px solid var(--destaque);
 }
 
+.projeto-info a {
+  text-decoration: none;
+  color: black;
+}
+
+.projeto-info a:hover {
+  text-decoration: none;
+  color: var(--destaque);
+  font-size: 1.05em;
+  transition: font-size 0.1s;
+}
 
 footer {
   background-color: var(--destaque);
@@ -311,12 +312,21 @@ footer a:hover {
   }
 
   #projeto-container .projeto-info {
-    max-width: 70%;
+    max-width: 60%;
   }
 
   #projeto-container .foto {
     aspect-ratio: 16/9;
-    max-width: 30%;
+    max-width: 78%;
+    float: right;
     max-height: 200px;
+   } 
+
+   #projeto-container .foto:hover {
+    aspect-ratio: 16/9;
+    max-width: 80%;
+    float: right;
+    max-height: 200px;
+    transition: max-width 0.3s;
    } 
 }
