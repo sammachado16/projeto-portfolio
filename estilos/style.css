@@ -52,6 +52,7 @@ header {
   z-index: 1;
 }
 
+/* Design nav */
 nav#menu ul {
   list-style: none;
   display: flex;
@@ -79,6 +80,7 @@ main {
   margin-top: 20px;
 }
 
+/* Design ficha */
 section#ficha {
   background-color: var(--fundo-card);
   padding: 20px;
@@ -140,6 +142,7 @@ article h2 {
   margin-bottom: 20px;
 }
 
+/* Design vídeo principal */
 .video-container {
   position: relative;
   width: 100%;
@@ -156,6 +159,7 @@ article h2 {
   border-radius: 8px;
 }
 
+ /* Design skills */
 #skill-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -191,6 +195,7 @@ article h2 {
   border-radius: 4px;
 }
 
+/* Design formação */
 #formacao-container {
   display: flex;
   flex-direction: column-reverse;
@@ -221,6 +226,7 @@ article h2 {
   color: var(--destaque-inverso);
 }
 
+/* Design projetos */
 #projeto-container {
   display: flex;
   flex-direction: column-reverse;
@@ -268,6 +274,7 @@ article h2 {
   transition: font-size 0.1s;
 }
 
+/* Design do rodapé */
 footer {
   background-color: var(--destaque);
   color: var(--texto-inverso);
@@ -285,7 +292,7 @@ footer a:hover {
   color: var(--destaque-inverso);
 }
 
-
+/* Design para telas maiores*/
 @media screen and (min-width: 768px) {
   main {
     grid-template-columns: auto 300px  1fr auto;
